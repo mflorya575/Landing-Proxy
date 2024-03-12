@@ -1,0 +1,330 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-Medium.ttf)
+    font-weight: 500
+    font-style: normal
+    font-display: swap */
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-Regular.ttf)
+    font-weight: 400
+    font-style: normal
+    font-display: swap */
+
+html
+    font-family: 'Roboto', sans-serif
+    font-weight: regular
+
+body
+    background: #F5F7FA
+    position: relative
+
+$color-red: #f82e50cf
+    
+.container
+    max-width: 1140px
+    position: relative
+    margin: 0 auto
+    /* z-index: 2 */
+
+.main-section
+    min-height: 850px
+    background: #0f2027
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364)
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364)
+    &__header
+        display: flex
+        align-items: center
+        padding-top: 30px
+        box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10)
+        border-radius: 0px 0px 32px 32px
+    &__header-img
+        width: 50px
+        height: 60px
+        margin-right: 50px
+    &__ul
+        display: flex
+        align-items: center
+        &-li
+            margin-right: 20px
+            &:last-child
+                margin-right: 0
+        &-link
+            text-decoration: none
+            font-weight: 300
+            font-size: 16px
+            color: #ffffffe8
+            &:hover
+                text-decoration: underline
+    &__header2
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 30px
+        &-first
+            margin-right: 600px
+        &-second
+            display: flex
+    &__block1
+        display: flex
+        align-items: center
+        margin-right: 40px
+    &__block2
+        display: flex
+        align-items: center
+    &__img
+        max-width: 600px
+        max-height: 440px
+    &__wrapper
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+    &__title
+        color: #FFF
+        font-weight: 600
+        font-size: 48px
+        line-height: 1.34
+        margin-bottom: 30px
+    &__text
+        color: #FFF
+        font-weight: 400
+        font-size: 18px
+        line-height: 1.34
+        margin-bottom: 80px
+    &__btn-block
+        display: flex
+    &__wrapper-last
+        margin-top: 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__descr1
+        background: #3b4f8f47
+        display: flex
+        align-items: center
+        border-radius: 20px
+        transition: all .5s
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+    &__descr1-img
+        width: 100px
+        height: 80px
+        border-radius: 50%
+        margin-right: 15px
+        margin: 20px
+    &__descr2
+        background: #3b4f8f47
+        display: flex
+        align-items: center
+        border-radius: 20px
+        transition: all .5s
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+    &__descr2-img
+        width: 100px
+        height: 80px
+        margin-right: 15px
+        margin: 20px
+    &__titles-title
+        margin-bottom: 10px
+        font-weight: 400
+        font-size: 14px
+        color: #626274
+    &__titles-text
+        font-weight: 500
+        font-size: 18px
+        line-height: 1.34
+        max-width: 390px
+        padding-right: 20px
+        color: #FFF
+
+form
+  position: relative
+  width: 300px
+
+.d5
+    margin-right: 50px
+
+.d5 input,
+.d5 button 
+  outline: none
+  background: transparent
+  border-radius: 20px
+
+.d5 input 
+  width: 100%
+  height: 42px
+  padding-left: 15px
+  border: 3px solid #F9F0DA
+
+.d5 button 
+  border: none
+  height: 42px
+  width: 42px
+  position: absolute
+  top: 0
+  right: 0
+  cursor: pointer
+
+.d5 button:before 
+  content: "\f002"
+  font-family: FontAwesome
+  font-size: 16px
+  color: #F9F0DA
+
+.d5 input:focus 
+  border-color: #311c24
+
+.span-red
+    color: $color-red
+
+.margin1
+    margin-right: 20px
+
+.btn
+    padding: 16px 32px
+    border: 0
+    font-weight: 400
+    font-size: 16px
+    line-height: 0.9
+    color: #0e0e1e
+    background: $color-red
+    border-radius: 10px
+    transition: all .3s
+    cursor: pointer
+    &:hover
+        background: #ee1438cf
+
+.bag-color
+    margin-right: 7px
+    color: $color-red
+
+.smile
+    margin-right: 7px
+    color: $color-red
+
+.second-section
+    min-height: 600px
+    background: #0f2027
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364)
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364)
+    &__title
+        text-align: center
+        color: #FFF
+        font-weight: 600
+        font-size: 48px
+        line-height: 1.34
+        padding-top: 80px
+        margin-bottom: 30px
+    &__wrapper
+        display: flex
+        align-content: center
+        justify-content: space-between
+        gap: 10px
+        &-first
+            background: #3b4f8f47
+            border-radius: 15px
+            transition: all .5s
+            &:hover
+                box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7)
+        &-second
+            background: #3b4f8f47
+            border-radius: 15px
+            transition: all .5s
+            &:hover
+                box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7)
+        &-third
+            background: #3b4f8f47
+            border-radius: 15px
+            transition: all .5s
+            &:hover
+                box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7)
+    &__title-mini
+        text-align: center
+        padding-top: 10px
+        margin-bottom: 20px
+        color: #000
+        font-weight: 600
+        font-size: 20px
+        color: #FFF
+    &__ul
+        margin-left: 20px
+    &__li
+        margin-bottom: 10px
+        list-style-type: disc
+        color: #FFF
+
+.padding
+    padding-left: 20px
+
+.input-margin
+    margin-bottom: 10px
+
+.btn2
+    margin-bottom: 20px
+
+.footer-section
+    min-height: 250px
+    background: #0f2027
+    &__header-nav
+        padding-top: 70px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__header-img
+        width: 50px
+        height: 60px
+        margin-right: 20px
+    &__block1
+        display: flex
+        align-items: center
+
+input[type='text'],
+input[type='number']
+    border-radius: 10px
+    border: none
+    padding: 5px
+
+.btn2
+    padding: 16px 32px
+    border: 0
+    font-weight: 400
+    font-size: 16px
+    line-height: 0.9
+    color: #0e0e1e
+    background: $color-red
+    border-radius: 10px
+    transition: all .3s
+    cursor: pointer
+    &:hover
+        background: #db1133cf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
